@@ -1,0 +1,32 @@
+{
+  "name": "cypresstypescriptcucumber",
+  "version": "1.0.0",
+  "description": "Cypress Typescript Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo",
+    "cypress:run": "node_modules/.bin/cypress run",
+    "cypress:open": "node_modules/.bin/cypress open",
+    "cypress:run:dev": "node_modules/.bin/cypress run --config-file cypress.dev.json --headed",
+    "cypress:run:qa": "node_modules/.bin/cypress run --config-file cypress.qa.json --browser chrome"
+  },
+  "author": "Sachin",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@cypress/webpack-preprocessor": "^4.1.0",
+    "@types/cypress-cucumber-preprocessor": "^1.14.0",
+    "@types/jquery": "^3.3.31",
+    "@types/node": "^12.11.7",
+    "cypress": "^3.5.0",
+    "cypress-cucumber-preprocessor": "^1.16.2",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.4.5",
+    "webpack": "^4.41.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {}
+}
